@@ -1,0 +1,110 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+nav {
+    background: white;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid lightgrey;
+    padding: 4px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div.container:nth-child(1) {
+    justify-content: flex-start;
+    z-index: 2;
+}
+
+nav div.container:nth-child(2) {
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav div.container:nth-child(3) {
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+button {
+    text-align: center;
+    vertical-align: center;
+    font-size: 10px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    -moz-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    -moz-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.icn-btn {
+    background: white;
+    border: none;
+    padding: 0px;
+    border-radius: 4px;
+    line-height: 1em;
+}
+
+.icn-btn > img {
+    padding: 8px 9px;
+}
+
+.icn-btn:hover, .icn-btn:active, .icn-btn:focus {
+    background-color: lightgrey;
+}
+
+.acc-btn {
+    color: white;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #6288a5;
+    border: 1px solid #326891;
+    border-radius: 3px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.acc-btn:hover, .icn-btn:active, .icn-btn:focus {
+    background-color: #326891;
+}
+
+.logo-link {
+    display: block;
+    width: auto;
+    line-height: 0px;
+    margin-top: 3px;
+}
+
