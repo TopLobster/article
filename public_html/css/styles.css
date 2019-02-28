@@ -30,7 +30,6 @@ html {
     }
 
     .menu div.container:nth-child(1) {
-        justify-content: flex-start;
         z-index: 2;
     }
 
@@ -43,7 +42,6 @@ html {
     }
 
     .menu div.container:nth-child(3) {
-        justify-content: flex-end;
         z-index: 2;
     }
 
@@ -61,6 +59,11 @@ html {
     }
 
 /* LINKS */
+    a {
+        color: black;
+        text-decoration: none;
+    }    
+
     .menu a {
         font-size: 14px;
         font-weight: 700;
@@ -98,9 +101,9 @@ html {
         -webkit-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
         transition-duration: 0.5s;
-        -webkit-transition-property: color, background-color;
-        -moz-transition-property: color, background-color;
-        transition-property: color, background-color;
+        -webkit-transition-property: color, background-color, border-color;
+        -moz-transition-property: color, background-color, border-color;
+        transition-property: color, background-color, border-color;
     }
 
     button:hover, button:active, button:focus {
@@ -141,23 +144,29 @@ html {
     }
 
     .soc-med-btn {
-        border: 1px solid rgb(238, 238, 238);
-        background: rgb(238, 238, 238);
+        border: 1px solid #eee;
+        background: #eee;
         height: 27px;
         width: 27px;
         border-radius: 13.5px;
         padding: 5px;
-        text-align: center;
-        vertical-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .soc-med-btn:hover, .soc-med-btn:active, .soc-med-btn:focus {
         background-color: white;
+        border-color: #ccc;
     }
 
 /* MAIN TEXT ARTICLE */
     main {
         font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+        max-width: 1220px;
+        margin: auto;
     }
     
     /* HEADER */
@@ -165,7 +174,7 @@ html {
             display: block;
             margin: 75px auto 20px;
             width: 100%;
-            max-width: 945px;
+            max-width: 1200px;
             min-width: 300px;
         }
         
@@ -301,8 +310,9 @@ html {
 }
 
 .article-end .acc-btn {
-    margin: 0px;
-    padding: 0px 100px;
+    margin: 0px 10px 0px 0px;
+    max-width: 350px;
+    width: 80%;
     height: 36px;
     font-size: 12px;
 }
